@@ -59,7 +59,14 @@ plugins:
     ~adapter-line:2y69yo: {}
     ~adapter-mail:x1fvbe: {}
     ~adapter-matrix:28rugh: {}
-    ~adapter-qq:fwmojm: {}
+    adapter-qq:fwmojm:
+      id: ${{ env.QQ_APP_ID }}
+      token: ${{ env.QQ_TOKEN }}
+      secret: ${{ env.QQ_SECRET }}
+      intents:
+        - GUILDS
+        - GUILD_MESSAGES
+        - DIRECT_MESSAGES
     ~adapter-satori:gc2wtm: {}
     ~adapter-slack:h39nup: {}
     ~adapter-telegram:cc5cal: {}
