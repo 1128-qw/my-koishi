@@ -90,6 +90,6 @@ plugins:
       defaultModel: openai/deepseek-v4-flash
     chatluna-openai-adapter:pfpypv:
       apiKeys:
-        - - sk-N3IIkJLXKyECGoPKheq6C5BcqKLMrysjhQjmQeVUUpB6E1kp
-          - https://ai.f3000.com/v1
+        - - qwertyuijkl123
+          - https://api.haoh.eu.cc/v1
           - true
