@@ -91,3 +91,4 @@ plugins:
       apiKeys:
         - - sk-a3467c8c7442f5899f6e9b3e3b7437b33627b0d08ea7a724a21a3a71cc743d67
           - https://cc-vibe.com/v1
+          - true
