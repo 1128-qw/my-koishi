@@ -1,0 +1,84 @@
+plugins:
+  group:server:
+    server:jibohx:
+      host: 0.0.0.0
+      port: ${{ +env.PORT || 5140 }}
+      maxPort: 5149
+    ~server-satori:w5upz0: {}
+    ~server-temp:cxoxyi: {}
+  group:basic:
+    debug:7c9egr: {}
+    ~admin:4rb4bw: {}
+    ~bind:69kw06: {}
+    commands:1km1r9: {}
+    help:do0wnu: {}
+    http:zt5g3s: {}
+    ~inspect:xiofxb: {}
+    locales:ljj7q6: {}
+    ~proxy-agent:wo6k6l: {}
+    rate-limit:fgt54k: {}
+    telemetry:lqhrf0: {}
+  group:console:
+    actions:o0u919: {}
+    analytics:5817vc: {}
+    android:c6ynm3:
+      $if: env.KOISHI_AGENT?.includes('Android')
+    ~auth:huhbjk: {}
+    config:9ega7i: {}
+    console:6vvpce:
+      open: true
+    dataview:e2gein: {}
+    desktop:v40tvk:
+      $if: env.KOISHI_AGENT?.includes('Desktop')
+    explorer:8j9iua: {}
+    logger:t3q9j6: {}
+    insight:m5rttb: {}
+    market:camazq:
+      search:
+        endpoint: https://registry.koishi.chat/index.json
+    notifier:mz0i5h: {}
+    oobe:4tuw3m: {}
+    sandbox:1ztba9: {}
+    status:w132nr: {}
+    theme-vanilla:2vmxhf: {}
+  group:storage:
+    ~database-mongo:otnabo:
+      database: koishi
+    ~database-mysql:0tthih:
+      database: koishi
+    ~database-postgres:by9pba:
+      database: koishi
+    database-sqlite:fqtszw:
+      path: data/koishi.db
+    assets-local:jfoyi0: {}
+  group:adapter:
+    ~adapter-dingtalk:gwadvj: {}
+    ~adapter-discord:lls86y: {}
+    ~adapter-kook:cxgh49: {}
+    ~adapter-lark:m0zy0t: {}
+    ~adapter-line:2y69yo: {}
+    ~adapter-mail:x1fvbe: {}
+    ~adapter-matrix:28rugh: {}
+    ~adapter-qq:fwmojm: {}
+    ~adapter-satori:gc2wtm: {}
+    ~adapter-slack:h39nup: {}
+    ~adapter-telegram:cc5cal: {}
+    ~adapter-wechat-official:6cbsye: {}
+    ~adapter-wecom:co6885: {}
+    ~adapter-whatsapp:mq326o: {}
+    ~adapter-zulip:uyw8wl: {}
+    adapter-onebot:xxxxxx:
+      protocol: ws-reverse
+      path: /onebot
+      selfId: '2096763348'
+  group:develop:
+    $if: env.NODE_ENV === 'development'
+    hmr:cesgbd:
+      root: .
+  group:chatluna:
+    chatluna:rpn16t:
+      defaultModel: openai/claude-sonnet-5
+    chatluna-openai-adapter:pfpypv:
+      apiKeys:
+        - - sk-a3467c8c7442f5899f6e9b3e3b7437b33627b0d08ea7a724a21a3a71cc743d67
+          - https://cc-vibe.com/v1
