@@ -64,6 +64,11 @@ plugins:
       token: ${{ env.QQ_TOKEN }}
       secret: ${{ env.QQ_SECRET }}
       type: private
+      intents:
+        - GUILDS
+        - GUILD_MESSAGES
+        - DIRECT_MESSAGES
+        - USER_MESSAGE
     ~adapter-satori:gc2wtm: {}
     ~adapter-slack:h39nup: {}
     ~adapter-telegram:cc5cal: {}
