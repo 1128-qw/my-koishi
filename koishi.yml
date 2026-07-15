@@ -86,9 +86,9 @@ plugins:
       root: .
   group:chatluna:
     chatluna:rpn16t:
-      defaultModel: openai/claude-sonnet-5
+      defaultModel: openai/deepseek-v4-flash
     chatluna-openai-adapter:pfpypv:
       apiKeys:
-        - - sk-a3467c8c7442f5899f6e9b3e3b7437b33627b0d08ea7a724a21a3a71cc743d67
-          - https://cc-vibe.com/v1
+        - - sk-N3IIkJLXKyECGoPKheq6C5BcqKLMrysjhQjmQeVUUpB6E1kp
+          - https://ai.f3000.com/v1
           - true
