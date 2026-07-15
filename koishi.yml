@@ -7,7 +7,7 @@ plugins:
     ~server-satori:w5upz0: {}
     ~server-temp:cxoxyi: {}
   group:basic:
-    ~fix-db: {}
+    fix-db: {}
     debug:7c9egr: {}
     ~admin:4rb4bw: {}
     ~bind:69kw06: {}
